@@ -1,3 +1,33 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.carousel {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: carousel-animation 10s infinite;
+}
+
+@keyframes carousel-animation {
+
+    0%,
+    100% {
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    10%,
+    90% {
+        opacity: 1;
+        transition: opacity 1s;
+    }
+}
+
+
+#menu-toggle:checked + label + ul {
+    opacity: 1;
+    pointer-events: auto;
+  }

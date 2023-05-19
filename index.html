@@ -4,7 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Flowbite - Tailwind CSS component library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+
+    <!-- Tailwind Play CDN-->
     <script src="https://cdn.tailwindcss.com"></script>
+
     <a rel="stylesheet" href="/styles.css">
         <title>Viidii</title>
 </head>
@@ -13,9 +24,8 @@
     <main>
 
         <!-- Header Starts Here -->
-        <header class="bg-[#EAEDF7] w-full h-[92px] md:h-[105px] fixed left-0 right-0 z-20">
-            <section
-                class="max-w-screen-2xl m-auto px-6 sm:px-12 md:px-24  w-full h-[89px] md:h-[105px] ">
+        <header class="bg-[#EAEDF7] w-full h-[72px] sm:h-[92px] md:h-[105px] fixed left-0 right-0 z-20">
+            <section class="max-w-screen-2xl m-auto px-6 sm:px-12 md:px-24  w-full h-[89px] md:h-[105px] ">
                 <div class="py-4 sm:py-6 md:py-8 top-0">
 
                     <div class="hidden lg:flex flex-row justify-between items-center">
@@ -65,68 +75,63 @@
                     </div>
 
                     <!-- Tablet Mode -->
-                    <div class="flex items-center ">
-                        <div class="block  lg:hidden">
-                            <ul
-                                class=" z-10 bg-[#EAEDF7] absolute left-0 top-[90px] md:top-[105px] flex flex-col justify-center items-center  w-full mr-12 gap-8 py-8  text-base font-normal ">
-                                <li class="text-[#2E2E2E] font-normal whitespace-nowrap text-sm">
-                                    About Us
-                                </li>
-                                <li class="text-[#2E2E2E] font-normal whitespace-nowrap text-sm">
-                                    How it Works
-                                </li>
-                                <li class="text-[#2E2E2E] font-normal whitespace-nowrap text-sm">
-                                    Contact us
-                                </li>
+                    <nav class="bg-[#EAEDF7]  lg:hidden block ">
+                        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
+                            <a href="#" class="flex items-center">
+                                <img src="assets/logo.png" alt="Viidii Logo" class="w-16 block lg:hidden" />
+                            </a>
+                            <button data-collapse-toggle="navbar-hamburger" type="button"
+                                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                aria-controls="navbar-hamburger" aria-expanded="false">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                            <div class="hidden w-full" id="navbar-hamburger">
+                                <ul
+                                    class=" z-10 bg-[#EAEDF7] absolute left-0 top-[70px] sm:top-[90px] md:top-[105px] flex flex-col justify-center items-center  w-full mr-12 gap-8 py-8  text-base font-normal ">
+                                    <li class="text-[#2E2E2E] font-normal whitespace-nowrap text-sm">
+                                        About Us
+                                    </li>
+                                    <li class="text-[#2E2E2E] font-normal whitespace-nowrap text-sm">
+                                        How it Works
+                                    </li>
+                                    <li class="text-[#2E2E2E] font-normal whitespace-nowrap text-sm">
+                                        Contact us
+                                    </li>
 
-                                <li>
-                                    <button
-                                        class="bg-[#F4BCD5] px-4 py-2 text-[#DB2777] text-sm font-normal border border-[#CCCFE6] rounded-lg">
-                                        Business
-                                    </button>
-                                </li>
+                                    <li>
+                                        <button
+                                            class="bg-[#F4BCD5] px-4 py-2 text-[#DB2777] text-sm font-normal border border-[#CCCFE6] rounded-lg">
+                                            Business
+                                        </button>
+                                    </li>
 
-                                <li>
-                                    <button
-                                        class="bg-[#BDC8E7] px-4 py-2 bg-[#294FB2] text-sm font-normal border border-[#CCCFE6] rounded-lg">
-                                        Customer
-                                    </button>
-                                </li>
-                            </ul>
-
-                        </div>
-
-                        <div class="w-full flex flex-row justify-between items-center">
-                            <img src="assets/logo.png" alt="Viidii Logo"  class="w-16 block lg:hidden" />
-                            <div class="flex flex-row gap-3 sm:gap-5 items-center lg:hidden">
-
-                                <div type="button"
-                                    class="px-4 py-2 h-10 md:h-6 rounded-full flex lg:hidden items-center justify-end z-10 w-full">
-                                    <button class=" flex items-center space-x-0 focus:outline-none ">
-                                        <div class="w-4 sm:w-6  h-5 flex items-center justify-center relative">
-                                            <span
-                                                class="transform transition w-full h-[2px] absolute rounded-full translate-y-0 z-20  bg-gray-800 w-3">
-                                            </span>
-                                            <span
-                                                class="transform transition w-full h-[2px] absolute rounded-full translate-y-1 z-20  bg-gray-800 w-3">
-                                            </span>
-                                            <span
-                                                class="transform transition w-full h-[2px] absolute rounded-full -translate-y-1 z-20 bg-gray-800 w-3">
-                                            </span>
-                                        </div>
-
-                                    </button>
-                                </div>
+                                    <li>
+                                        <button
+                                            class="bg-[#BDC8E7] px-4 py-2 bg-[#294FB2] text-sm font-normal border border-[#CCCFE6] rounded-lg">
+                                            Customer
+                                        </button>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </nav>
+
             </section>
         </header>
-
-
         <!-- Header Ends Here -->
+
+        <!-- Hero -->
+
+
+
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="script.js"></script>
 </body>
 
