@@ -40,7 +40,7 @@
                         <div class="flex flex-row gap-20 justify-center items-center">
                             <div>
                                 <ul class="flex flex-row text-lg gap-12 font-normal text-[#CCCFE6]">
-                                    <a href="#about">
+                                    <a href="#aboutus">
                                         <li class="text-[#2E2E2E] font-normal whitespace-nowrap">
                                             About Us
                                         </li>
@@ -93,15 +93,25 @@
                             <div class="hidden w-full" id="navbar-hamburger">
                                 <ul
                                     class=" z-10 bg-[#EAEDF7] absolute left-0 top-[70px] sm:top-[90px] md:top-[105px] flex flex-col justify-center items-center  w-full mr-12 gap-8 py-8  text-base font-normal ">
-                                    <li class="text-[#2E2E2E] font-normal whitespace-nowrap textbase">
-                                        About Us
-                                    </li>
-                                    <li class="text-[#2E2E2E] font-normal whitespace-nowrap text-base ">
-                                        How it Works
-                                    </li>
-                                    <li class="text-[#2E2E2E] font-normal whitespace-nowrap text-base ">
-                                        Contact us
-                                    </li>
+
+                                    <a href="#aboutus">
+                                        <li class="text-[#2E2E2E] font-normal whitespace-nowrap textbase">
+                                            About Us
+                                        </li>
+                                    </a>
+
+                                    <a href="#works">
+                                        <li class="text-[#2E2E2E] font-normal whitespace-nowrap text-base ">
+                                            How it Works
+                                        </li>
+                                    </a>
+
+                                    <a href="#contact">
+                                        <li class="text-[#2E2E2E] font-normal whitespace-nowrap text-base ">
+                                            Contact us
+                                        </li>
+                                    </a>
+
 
                                     <li>
                                         <button
@@ -202,7 +212,7 @@
 
         <!-- Why Choose Us Starts Here -->
 
-        <section class="max-w-screen-2xl m-auto px-6 sm:px-12 md:px-24 my-14">
+        <section id="aboutus" class="max-w-screen-2xl m-auto px-6 sm:px-12 md:px-24 my-14">
             <div class="bg-[#172B62] px-10 py-12 rounded-3xl">
                 <h2 class="text-xl lg:text-3xl text-white mb-8">Why choose us?</h2>
 
@@ -447,7 +457,7 @@
 
 
         <!-- Vindii How it Works Section Starts Here -->
-        <section class="max-w-screen-2xl m-auto px-6 sm:px-12 md:px-24 py-16">
+        <section id="works" class="max-w-screen-2xl m-auto px-6 sm:px-12 md:px-24 py-16">
 
             <h2 class="text-4xl font-semibold text-center text-[#232323] mb-10 lg:mb-14">How it works</h2>
 
@@ -551,7 +561,7 @@
 
         <!-- Vindii Contact Us Section Starts Here -->
 
-        <div class="bg-[#FAFAFA]">
+        <div id="contact" class="bg-[#FAFAFA]">
             <section class="max-w-screen-2xl m-auto px-6 sm:px-12 md:px-24 py-16">
                 <h2 class="text-4xl font-semibold text-center text-[#232323] mb-10 lg:mb-14">Contact Us</h2>
 
@@ -641,14 +651,15 @@
                             </div>
 
                             <div class="">
-                                <ul class="list-disc text-sm flex flex-row flex-wrap items-center justify-center gap-x-8 gap-y-2 px-3">
-                                    <a href="">
+                                <ul
+                                    class="list-disc text-sm flex flex-row flex-wrap items-center justify-center gap-x-8 gap-y-2 px-3">
+                                    <a href="#aboutus">
                                         <li>About Us</li>
                                     </a>
-                                    <a href="">
+                                    <a href="#works">
                                         <li>How It Works</li>
                                     </a>
-                                    <a href="">
+                                    <a href="contact">
                                         <li>Contact Us</li>
                                     </a>
                                     <a href="">
