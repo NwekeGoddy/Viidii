@@ -162,13 +162,13 @@
                     class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
                     <div class="relative w-full max-w-2xl max-h-full">
                         <!-- Modal content -->
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <div class="relative bg-white rounded-lg shadow ">
                             <!-- Modal header -->
-                            <div class="flex items-start justify-between p-4 border-b rounded-t ">
+                            <div class="flex flex-col gap-6 justify-start items-start p-4 rounded-t ">
                                 <button type="button"
-                                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
+                                    class="text-gray-400 bg-[#545353] rounded-full p-2 text-sm p-1.5  inline-flex items-center"
                                     data-modal-hide="defaultModalAddress">
-                                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                    <svg aria-hidden="true" class="w-5 h-5" fill="#fff" viewBox="0 0 20 20"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
                                             d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -176,28 +176,137 @@
                                     </svg>
                                     <span class="sr-only">Close modal</span>
                                 </button>
+
+                                <h2 class="text-2xl lg:text-3xl font-semibold">Your Location</h2>
                             </div>
 
                             <!-- Modal body -->
-                            <div class="p-6 space-y-6">
-                                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                    With less than a month to go before the European Union enacts new consumer privacy
-                                    laws for its citizens, companies around the world are updating their terms of
-                                    service agreements to comply.
-                                </p>
-                                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect
-                                    on May 25 and is meant to ensure a common set of data rights in the European Union.
-                                    It requires organizations to notify users as soon as possible of high-risk data
-                                    breaches that could personally affect them.
-                                </p>
+                            <div class="p-6">
+
+                                <!-- Modal Search Bar -->
+                                <div class="w-full">
+                                    <input type="text" name="address" id=""
+                                        class="border-[#CACACA] rounded-lg px-6 py-3 w-full"
+                                        placeholder="Akobo, Ibadan">
+                                </div>
+
+
+                                <!-- Modal Search Result -->
+                                <div class="flex flex-col gap-4 my-12">
+
+                                    <div class="flex flex-row gap-2 ">
+                                        <div>
+                                            <svg fill="#294FB2" version="1.1" id="Capa_1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                                viewBox="-118.71 -118.71 633.13 633.13" xml:space="preserve"
+                                                stroke="#545353" transform="matrix(1, 0, 0, 1, 0, 0)"
+                                                stroke-width="6.33136">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke="#CCCCCC" stroke-width="3.16568"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <g>
+                                                        <path
+                                                            d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738 c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388 C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191 c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="flex flex-col gap-1">
+                                            <p class="text-[#232323] text-base font-semibold">Eastern Capetown</p>
+                                            <p class="text-black text-sm">Eastern Capetown, South Africa</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flex-row gap-2 ">
+                                        <div>
+                                            <svg fill="#294FB2" version="1.1" id="Capa_1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                                viewBox="-118.71 -118.71 633.13 633.13" xml:space="preserve"
+                                                stroke="#545353" transform="matrix(1, 0, 0, 1, 0, 0)"
+                                                stroke-width="6.33136">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke="#CCCCCC" stroke-width="3.16568"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <g>
+                                                        <path
+                                                            d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738 c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388 C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191 c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="flex flex-col gap-1">
+                                            <p class="text-[#232323] text-base font-semibold">Eastern Capetown</p>
+                                            <p class="text-black text-sm">Eastern Capetown, South Africa</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="flex flex-row gap-2 ">
+                                        <div>
+                                            <svg fill="#294FB2" version="1.1" id="Capa_1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                                viewBox="-118.71 -118.71 633.13 633.13" xml:space="preserve"
+                                                stroke="#545353" transform="matrix(1, 0, 0, 1, 0, 0)"
+                                                stroke-width="6.33136">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke="#CCCCCC" stroke-width="3.16568"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <g>
+                                                        <path
+                                                            d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738 c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388 C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191 c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="flex flex-col gap-1">
+                                            <p class="text-[#232323] text-base font-semibold">Eastern Capetown</p>
+                                            <p class="text-black text-sm">Eastern Capetown, South Africa</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="flex flex-row gap-2 ">
+                                        <div>
+                                            <svg fill="#294FB2" version="1.1" id="Capa_1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                                viewBox="-118.71 -118.71 633.13 633.13" xml:space="preserve"
+                                                stroke="#545353" transform="matrix(1, 0, 0, 1, 0, 0)"
+                                                stroke-width="6.33136">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke="#CCCCCC" stroke-width="3.16568"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <g>
+                                                        <path
+                                                            d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738 c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388 C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191 c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="flex flex-col gap-1">
+                                            <p class="text-[#232323] text-base font-semibold">Eastern Capetown</p>
+                                            <p class="text-black text-sm">Eastern Capetown, South Africa</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- Modal footer -->
+                            <!-- Modal footer / Button -->
                             <div
                                 class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
                                 <button data-modal-hide="defaultModalAddress" type="button"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">I
-                                    accept</button>
+                                    class="w-full text-white bg-[#294FB2]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3.5 text-center">Set
+                                    Location</button>
 
                             </div>
                         </div>
