@@ -4,17 +4,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+
+
+    <!-- Flowbite - Tailwind CSS component library Stylesheet-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+
+    <!-- Tailwind Play CDN-->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
-    <title>Viidii</title>
+
+    <link rel="stylesheet" href="/styles.css">
+    <title>Vindii | Search Result</title>
 </head>
 
 <body>
-    <!-- Add your HTML content here -->
-    <h1 class="text-3xl font-bold underline text-center">
-        Search page
+    <main>
 
-    </h1>
+        <!-- Header Starts Here -->
+        <header class="bg-[#EAEDF7] w-full h-[72px] sm:h-[92px] md:h-[105px] fixed left-0 right-0 z-50">
+            <section class="max-w-screen-2xl m-auto px-6 sm:px-12 md:px-24  w-full h-[89px] md:h-[105px] ">
+                <div class="py-4 sm:py-6 md:py-8 top-0">
+                    <div class="hidden lg:flex flex-row justify-between items-center">
+
+                        <div class="">
+                            <div class="flex flex-row items-center gap-2">
+                                <img src="assets/logo.png" alt="Viidii Logo" />
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row gap-20 justify-center items-center">
+                            <div>
+                                <ul class="flex flex-row text-lg gap-12 font-normal text-[#CCCFE6]">
+                                    <a href="#aboutus">
+                                        <li class="text-[#2E2E2E] font-normal whitespace-nowrap">
+                                            About Us
+                                        </li>
+                                    </a>
+                                    <a href="#works">
+
+                                        <li class="text-[#2E2E2E] font-normal whitespace-nowrap">
+                                            How it Works
+                                        </li>
+                                    </a>
+                                    <a href="#contact">
+                                        <li class="text-[#2E2E2E] font-normal whitespace-nowrap">
+                                            Contact us
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+
+                            <div class="flex flex-row gap-6">
+                                <a href="/signupclient.html"><button
+                                        class="bg-[#F4BCD5] px-6 py-3  sm:px-6 sm:py-2 text-[#DB2777] text-base font-normal border border-[#CCCFE6] rounded-lg">
+                                        Business
+                                    </button></a>
+
+                                <a href="/signup.html"><button
+                                        class="bg-[#BDC8E7] px-6 py-3  sm:px-6 sm:py-2 text-[#294FB2]  text-base font-normal border border-[#CCCFE6] rounded-lg">
+                                        Customer
+                                    </button></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tablet Mode -->
+                    <nav class="bg-[#EAEDF7]  lg:hidden block ">
+                        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
+                            <a href="#" class="flex items-center">
+                                <img src="assets/logo.png" alt="Viidii Logo" class="w-16 block lg:hidden" />
+                            </a>
+                            <button data-collapse-toggle="navbar-hamburger" type="button"
+                                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200  "
+                                aria-controls="navbar-hamburger" aria-expanded="false">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                            <div class="hidden w-full" id="navbar-hamburger">
+                                <ul
+                                    class=" z-10 bg-[#EAEDF7] absolute left-0 top-[70px] sm:top-[90px] md:top-[105px] flex flex-col justify-center items-center  w-full mr-12 gap-8 py-8  text-base font-normal ">
+
+                                    <a href="#aboutus">
+                                        <li class="text-[#2E2E2E] font-normal whitespace-nowrap textbase">
+                                            About Us
+                                        </li>
+                                    </a>
+
+                                    <a data-collapse-hide href="#works">
+                                        <li class="text-[#2E2E2E] font-normal whitespace-nowrap text-base ">
+                                            How it Works
+                                        </li>
+                                    </a>
+
+                                    <a href="#contact">
+                                        <li class="text-[#2E2E2E] font-normal whitespace-nowrap text-base ">
+                                            Contact us
+                                        </li>
+                                    </a>
+
+
+                                    <li>
+                                        <a href="/signupclient.html"><button
+                                                class="bg-[#F4BCD5] px-4 py-2 text-[#DB2777] text-base  font-normal border border-[#CCCFE6] rounded-lg">
+                                                Business
+                                            </button></a>
+
+                                    </li>
+
+                                    <li>
+                                        <a href="/signup.html"><button
+                                                class="bg-[#BDC8E7] px-4 py-2 bg-[#294FB2] text-base  font-normal border border-[#CCCFE6] rounded-lg">
+                                                Customer
+                                            </button></a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+            </section>
+        </header>
+        <!-- Header Ends Here -->
+
+
+        <section
+            class="max-w-screen-2xl m-auto px-6 sm:px-12 md:px-24  w-full h-[89px] md:h-[105px] pt-[150px] pb-[500px]">
+
+            <!-- Search address Starts Here -->
+            <div class=" flex flex-col  justify-center items-center text-[#2E2E2E] text-lg">
+                <p class="">123 Main Street Port Elizabeth Eastern </p>
+                <p class="">Cape 6001 South Africa</p>
+                <a href="">
+                    <p class="text-[#DB2777] mt-3 text-base">change address</p>
+                </a>
+            </div>
+            <!-- Search address Ends Here -->
+
+            <!-- Search Header Starts Here -->
+            <div class="flex flex-col gap-3 mt-14 md:mt-20 lg:mt-28">
+                <h2 class="text-3xl text-[#2E2E2E] font-semibold">Solar Panels Products close to you</h2>
+                <div class="flex flex-row justify-between">
+                    <div class="flex flex-row items-center gap-2">
+                        <div class="w-4 h-4 rounded-full bg-[#DB2777]"></div>
+                        <p class="text-[#2E2E2E] text-2xl"> 194 Solar Panels</p>
+                    </div>
+
+                    <div>
+                        <!-- Dropdown Here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Header Ends Here -->
+
+
+
+            <!-- Search Data Starts Here -->
+            <div class="flex flex-row flex-wrap">
+                <div>
+                    <img src="" alt="">
+                    <div></div>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- Search Data Ends Here -->
+
+        </section>
+        <!-- Footer Starts Here -->
+
+        <footer class="relative">
+
+            <img src="/assets/footerimage.png" class="absolute inset-0 object-cover w-full h-full"
+                alt="Background Image">
+            <div class="relative">
+                <div class="bg-[#11214B] bg-opacity-90 absolute inset-0"></div>
+
+                <section class="max-w-screen-2xl m-auto px-6 sm:px-12 md:px-24 ">
+                    <div class="flex items-center justify-center h-full">
+                        <div
+                            class="text-white text-center relative z-10 py-16 flex flex-col items-center justify-center gap-16 md:gap-24">
+                            <div class="w-full md:w-8/12 m-auto">
+                                <p class="text-lg font-semibold">Let's keep in touch!
+                                </p>
+                                <p class="text-lg font-semibold">
+                                    You can also reach out to us on any of the following social media platforms, we
+                                    respond
+                                    in 1
+                                    or 2 business days</p>
+                            </div>
+
+
+                            <div>
+                                <ul class="flex flex-row gap-6 items-center">
+                                    <a href="">
+                                        <li class="p-3 rounded-lg bg-white "><img src="/assets/socialicons/whatsapp.svg"
+                                                alt="Whatsapp Icon" class="w-6"></li>
+                                    </a>
+                                    <a href="">
+                                        <li class="p-3 rounded-lg bg-white "><img src="/assets/socialicons/twitter.svg"
+                                                alt="Twitter Icon" class="w-6"></li>
+                                    </a>
+                                    <a href="">
+                                        <li class="p-3 rounded-lg bg-white "><img
+                                                src="/assets/socialicons/instagram.svg" alt="Instagram Icon"
+                                                class="w-6"></li>
+                                    </a>
+                                    <a href="">
+                                        <li class="p-3 rounded-lg bg-white "><img src="/assets/socialicons/phone.svg"
+                                                alt="Phone Icon" class="w-6"></li>
+                                    </a>
+                                </ul>
+                            </div>
+
+                            <div class="">
+                                <ul
+                                    class="list-disc text-sm flex flex-row flex-wrap items-center justify-center gap-x-8 gap-y-2 px-3">
+                                    <a href="#aboutus">
+                                        <li>About Us</li>
+                                    </a>
+                                    <a href="#works">
+                                        <li>How It Works</li>
+                                    </a>
+                                    <a href="contact">
+                                        <li>Contact Us</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Refunds and Cancellations</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Terms and Conditions</li>
+                                    </a>
+
+                                </ul>
+                            </div>
+
+                            <div class="w-full md:8/12 lg:w-6/12">
+                                <p class="italic text-sm ">Office Address: Crownwood Office Park, Block D-2nd Floor, 100
+                                    Northern Parkway, Ormonde,
+                                    JHB,
+                                    2019 Contact number: +27784359201
+                                    Copyright © 2023 Vindii</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </footer>
+
+        <!-- Footer Ends Here -->
+    </main>
+
+
+
+    <!-- Flowbite - Tailwind CSS component library Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="script.js"></script>
 </body>
 
