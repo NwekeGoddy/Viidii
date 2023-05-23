@@ -33,7 +33,10 @@
 
                         <div class="">
                             <div class="flex flex-row items-center gap-2">
-                                <img src="assets/logo.png" alt="Viidii Logo" />
+                                <a href="/">
+                                    <img src="assets/logo.png" alt="Viidii Logo" />
+                                </a>
+
                             </div>
                         </div>
 
@@ -77,12 +80,11 @@
                     <!-- Tablet Mode -->
                     <nav class="bg-[#EAEDF7]  lg:hidden block ">
                         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
-                            <a href="#" class="flex items-center">
+                            <a href="/" class="flex items-center">
                                 <img src="assets/logo.png" alt="Viidii Logo" class="w-16 block lg:hidden" />
                             </a>
-                            <button data-collapse-toggle="navbar-hamburger" type="button"
-                                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200  "
-                                aria-controls="navbar-hamburger" aria-expanded="false">
+                            <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" type="button"
+                                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200  ">
                                 <span class="sr-only">Open main menu</span>
                                 <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -92,26 +94,26 @@
                                 </svg>
                             </button>
 
-                           
 
 
-                            <div class="hidden w-full" aria-hidden="true" id="navbar-hamburger">
+
+                            <div class="hidden w-full" id="defaultModal" tabindex="-1" aria-hidden="true">
                                 <ul
                                     class=" z-10 bg-[#EAEDF7] absolute left-0 top-[70px] sm:top-[90px] md:top-[105px] flex flex-col justify-center items-center  w-full mr-12 gap-8 py-8  text-base font-normal ">
 
-                                    <a data-collapse-hidden="navbar-hamburger"   data-modal-hide="navbar-hamburger" href="#aboutus">
+                                    <a data-modal-hide="defaultModal" href="#aboutus">
                                         <li class="text-[#2E2E2E] font-normal whitespace-nowrap textbase">
                                             About Us
                                         </li>
                                     </a>
 
-                                    <a data-collapse-hide href="#works">
+                                    <a data-modal-hide="defaultModal" href="#works">
                                         <li class="text-[#2E2E2E] font-normal whitespace-nowrap text-base ">
                                             How it Works
                                         </li>
                                     </a>
 
-                                    <a href="#contact">
+                                    <a data-modal-hide="defaultModal" href="#contact">
                                         <li class="text-[#2E2E2E] font-normal whitespace-nowrap text-base ">
                                             Contact us
                                         </li>
@@ -134,6 +136,7 @@
 
                                     </li>
                                 </ul>
+                                <span class="sr-only">Close modal</span>
                             </div>
                         </div>
                     </nav>
