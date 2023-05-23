@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-
-
+    <!-- FontAwesome - Icon library Stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <!-- Flowbite - Tailwind CSS component library Stylesheet-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
@@ -140,7 +140,7 @@
 
 
         <section
-            class="max-w-screen-2xl m-auto px-6 sm:px-12 md:px-24  w-full h-[89px] md:h-[105px] pt-[150px] pb-[500px]">
+            class="max-w-screen-2xl m-auto px-6 sm:px-12 md:px-24  w-full h-[89px] md:h-[105px] pt-[150px] pb-[1000px]">
 
             <!-- Search address Starts Here -->
             <div class=" flex flex-col  justify-center items-center text-[#2E2E2E] text-lg">
@@ -162,7 +162,28 @@
                     </div>
 
                     <div>
-                        <!-- Dropdown Here -->
+                        <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
+                            data-dropdown-trigger="hover"
+                            class="text-[#232323]] border-2 border-[#CACACA] bg-white hover:bg-wite focus:ring-1 focus:outline-none focus:ring-[#CACACA] font-medium rounded-lg text-base px-5 py-3 text-center inline-flex items-center"
+                            type="button">Highly rated <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownHover"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownHoverButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Mediumly rated</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 e">Lowly Rated</a>
+                                </li>
+
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -172,21 +193,328 @@
 
 
             <!-- Search Data Starts Here -->
-            <div class="flex flex-row flex-wrap">
-                <div>
-                    <img src="" alt="">
-                    <div></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+                <div class=" rounded-xl">
+
+                    <div class="relative w-full  ">
+                        <img class="w-full  object-cover rounded-t-xl" src="/assets/search/searchpicture.png"
+                            alt="Search Picture">
+
+                        <div class="absolute top-5 left-4">
+                            <p class="text-[#2E2E2E] bg-white p-1 text-[12px] rounded">Energy solution</p>
+                        </div>
+
+                        <div
+                            class="absolute top-5 right-4 rounded bg-white text-[#2E2E2E] px-1 py-[2px] flex flex-row gap-1 items-center">
+                            <img src="/assets/search/star.png" alt="Search Star">
+                            <p class="text-[13px]">4.3</p>
+                        </div>
+                    </div>
+
+                    <div class="flex  flex-col py-4 px-2 bg-[#EAEDF7] rounded-b-xl">
+                        <div class="flex flex-row items-center gap-2">
+                            <img src="/assets/search/searchlogo.png" alt="Search customer logo">
+                            <p class="font-semibold text-base">SunPower Solar Panels</p>
+                        </div>
+
+                        <div class="ml-[46px]">
+                            <div class="flex flex-row items-center">
+                                <svg fill="#545353" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                    viewBox="-118.71 -118.71 633.13 633.13" xml:space="preserve" stroke="#545353"
+                                    transform="matrix(1, 0, 0, 1, 0, 0)" stroke-width="6.33136">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#CCCCCC" stroke-width="3.16568"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g>
+                                            <path
+                                                d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738 c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388 C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191 c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p class="text-[#545353]  text-sm">Eastern Cape provinces</p>
+                            </div>
+
+                            <div class=" flex flex-row justify-between items-center mt-4">
+                                <p class="text-[#DB2777] text-lg font-semibold">R1000</p>
+                                <button class="bg-[#DB2777] p-[10px] text-sm rounded-lg text-white font-semibold">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div></div>
-                <div></div>
-            </div>
+
+                <div class=" rounded-xl">
+
+                    <div class="relative w-full  ">
+                        <img class="w-full  object-cover rounded-t-xl" src="/assets/search/searchpicture.png"
+                            alt="Search Picture">
+
+                        <div class="absolute top-5 left-4">
+                            <p class="text-[#2E2E2E] bg-white p-1 text-[12px] rounded">Energy solution</p>
+                        </div>
+
+                        <div
+                            class="absolute top-5 right-4 rounded bg-white text-[#2E2E2E] px-1 py-[2px] flex flex-row gap-1 items-center">
+                            <img src="/assets/search/star.png" alt="Search Star">
+                            <p class="text-[13px]">4.3</p>
+                        </div>
+                    </div>
+
+                    <div class="flex  flex-col py-4 px-2 bg-[#EAEDF7] rounded-b-xl">
+                        <div class="flex flex-row items-center gap-2">
+                            <img src="/assets/search/searchlogo.png" alt="Search customer logo">
+                            <p class="font-semibold text-base">SunPower Solar Panels</p>
+                        </div>
+
+                        <div class="ml-[46px]">
+                            <div class="flex flex-row items-center">
+                                <svg fill="#545353" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                    viewBox="-118.71 -118.71 633.13 633.13" xml:space="preserve" stroke="#545353"
+                                    transform="matrix(1, 0, 0, 1, 0, 0)" stroke-width="6.33136">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#CCCCCC" stroke-width="3.16568"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g>
+                                            <path
+                                                d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738 c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388 C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191 c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p class="text-[#545353]  text-sm">Eastern Cape provinces</p>
+                            </div>
+
+                            <div class=" flex flex-row justify-between items-center mt-4">
+                                <p class="text-[#DB2777] text-lg font-semibold">R1000</p>
+                                <button class="bg-[#DB2777] p-[10px] text-sm rounded-lg text-white font-semibold">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class=" rounded-xl">
+
+                    <div class="relative w-full  ">
+                        <img class="w-full  object-cover rounded-t-xl" src="/assets/search/searchpicture.png"
+                            alt="Search Picture">
+
+                        <div class="absolute top-5 left-4">
+                            <p class="text-[#2E2E2E] bg-white p-1 text-[12px] rounded">Energy solution</p>
+                        </div>
+
+                        <div
+                            class="absolute top-5 right-4 rounded bg-white text-[#2E2E2E] px-1 py-[2px] flex flex-row gap-1 items-center">
+                            <img src="/assets/search/star.png" alt="Search Star">
+                            <p class="text-[13px]">4.3</p>
+                        </div>
+                    </div>
+
+                    <div class="flex  flex-col py-4 px-2 bg-[#EAEDF7] rounded-b-xl">
+                        <div class="flex flex-row items-center gap-2">
+                            <img src="/assets/search/searchlogo.png" alt="Search customer logo">
+                            <p class="font-semibold text-base">SunPower Solar Panels</p>
+                        </div>
+
+                        <div class="ml-[46px]">
+                            <div class="flex flex-row items-center">
+                                <svg fill="#545353" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                    viewBox="-118.71 -118.71 633.13 633.13" xml:space="preserve" stroke="#545353"
+                                    transform="matrix(1, 0, 0, 1, 0, 0)" stroke-width="6.33136">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#CCCCCC" stroke-width="3.16568"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g>
+                                            <path
+                                                d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738 c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388 C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191 c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p class="text-[#545353]  text-sm">Eastern Cape provinces</p>
+                            </div>
+
+                            <div class=" flex flex-row justify-between items-center mt-4">
+                                <p class="text-[#DB2777] text-lg font-semibold">R1000</p>
+                                <button class="bg-[#DB2777] p-[10px] text-sm rounded-lg text-white font-semibold">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class=" rounded-xl">
+
+                    <div class="relative w-full  ">
+                        <img class="w-full  object-cover rounded-t-xl" src="/assets/search/searchpicture.png"
+                            alt="Search Picture">
+
+                        <div class="absolute top-5 left-4">
+                            <p class="text-[#2E2E2E] bg-white p-1 text-[12px] rounded">Energy solution</p>
+                        </div>
+
+                        <div
+                            class="absolute top-5 right-4 rounded bg-white text-[#2E2E2E] px-1 py-[2px] flex flex-row gap-1 items-center">
+                            <img src="/assets/search/star.png" alt="Search Star">
+                            <p class="text-[13px]">4.3</p>
+                        </div>
+                    </div>
+
+                    <div class="flex  flex-col py-4 px-2 bg-[#EAEDF7] rounded-b-xl">
+                        <div class="flex flex-row items-center gap-2">
+                            <img src="/assets/search/searchlogo.png" alt="Search customer logo">
+                            <p class="font-semibold text-base">SunPower Solar Panels</p>
+                        </div>
+
+                        <div class="ml-[46px]">
+                            <div class="flex flex-row items-center">
+                                <svg fill="#545353" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                    viewBox="-118.71 -118.71 633.13 633.13" xml:space="preserve" stroke="#545353"
+                                    transform="matrix(1, 0, 0, 1, 0, 0)" stroke-width="6.33136">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#CCCCCC" stroke-width="3.16568"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g>
+                                            <path
+                                                d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738 c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388 C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191 c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p class="text-[#545353]  text-sm">Eastern Cape provinces</p>
+                            </div>
+
+                            <div class=" flex flex-row justify-between items-center mt-4">
+                                <p class="text-[#DB2777] text-lg font-semibold">R1000</p>
+                                <button class="bg-[#DB2777] p-[10px] text-sm rounded-lg text-white font-semibold">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" rounded-xl">
+
+                    <div class="relative w-full  ">
+                        <img class="w-full  object-cover rounded-t-xl" src="/assets/search/searchpicture.png"
+                            alt="Search Picture">
+
+                        <div class="absolute top-5 left-4">
+                            <p class="text-[#2E2E2E] bg-white p-1 text-[12px] rounded">Energy solution</p>
+                        </div>
+
+                        <div
+                            class="absolute top-5 right-4 rounded bg-white text-[#2E2E2E] px-1 py-[2px] flex flex-row gap-1 items-center">
+                            <img src="/assets/search/star.png" alt="Search Star">
+                            <p class="text-[13px]">4.3</p>
+                        </div>
+                    </div>
+
+                    <div class="flex  flex-col py-4 px-2 bg-[#EAEDF7] rounded-b-xl">
+                        <div class="flex flex-row items-center gap-2">
+                            <img src="/assets/search/searchlogo.png" alt="Search customer logo">
+                            <p class="font-semibold text-base">SunPower Solar Panels</p>
+                        </div>
+
+                        <div class="ml-[46px]">
+                            <div class="flex flex-row items-center">
+                                <svg fill="#545353" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                    viewBox="-118.71 -118.71 633.13 633.13" xml:space="preserve" stroke="#545353"
+                                    transform="matrix(1, 0, 0, 1, 0, 0)" stroke-width="6.33136">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#CCCCCC" stroke-width="3.16568"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g>
+                                            <path
+                                                d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738 c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388 C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191 c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p class="text-[#545353]  text-sm">Eastern Cape provinces</p>
+                            </div>
+
+                            <div class=" flex flex-row justify-between items-center mt-4">
+                                <p class="text-[#DB2777] text-lg font-semibold">R1000</p>
+                                <button class="bg-[#DB2777] p-[10px] text-sm rounded-lg text-white font-semibold">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class=" rounded-xl">
+
+                    <div class="relative w-full  ">
+                        <img class="w-full  object-cover rounded-t-xl" src="/assets/search/searchpicture.png"
+                            alt="Search Picture">
+
+                        <div class="absolute top-5 left-4">
+                            <p class="text-[#2E2E2E] bg-white p-1 text-[12px] rounded">Energy solution</p>
+                        </div>
+
+                        <div
+                            class="absolute top-5 right-4 rounded bg-white text-[#2E2E2E] px-1 py-[2px] flex flex-row gap-1 items-center">
+                            <img src="/assets/search/star.png" alt="Search Star">
+                            <p class="text-[13px]">4.3</p>
+                        </div>
+                    </div>
+
+                    <div class="flex  flex-col py-4 px-2 bg-[#EAEDF7] rounded-b-xl">
+                        <div class="flex flex-row items-center gap-2">
+                            <img src="/assets/search/searchlogo.png" alt="Search customer logo">
+                            <p class="font-semibold text-base">SunPower Solar Panels</p>
+                        </div>
+
+                        <div class="ml-[46px]">
+                            <div class="flex flex-row items-center">
+                                <svg fill="#545353" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                    viewBox="-118.71 -118.71 633.13 633.13" xml:space="preserve" stroke="#545353"
+                                    transform="matrix(1, 0, 0, 1, 0, 0)" stroke-width="6.33136">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#CCCCCC" stroke-width="3.16568"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g>
+                                            <path
+                                                d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738 c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388 C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191 c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p class="text-[#545353]  text-sm">Eastern Cape provinces</p>
+                            </div>
+
+                            <div class=" flex flex-row justify-between items-center mt-4">
+                                <p class="text-[#DB2777] text-lg font-semibold">R1000</p>
+                                <button class="bg-[#DB2777] p-[10px] text-sm rounded-lg text-white font-semibold">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             <!-- Search Data Ends Here -->
 
         </section>
         <!-- Footer Starts Here -->
 
-        <footer class="relative">
+        <footer class="relative mt-[8px]  bottom-0">
 
             <img src="/assets/footerimage.png" class="absolute inset-0 object-cover w-full h-full"
                 alt="Background Image">
