@@ -91,11 +91,15 @@
                                         clip-rule="evenodd"></path>
                                 </svg>
                             </button>
-                            <div class="hidden w-full" id="navbar-hamburger">
+
+                           
+
+
+                            <div class="hidden w-full" aria-hidden="true" id="navbar-hamburger">
                                 <ul
                                     class=" z-10 bg-[#EAEDF7] absolute left-0 top-[70px] sm:top-[90px] md:top-[105px] flex flex-col justify-center items-center  w-full mr-12 gap-8 py-8  text-base font-normal ">
 
-                                    <a href="#aboutus">
+                                    <a data-collapse-hidden="navbar-hamburger"   data-modal-hide="navbar-hamburger" href="#aboutus">
                                         <li class="text-[#2E2E2E] font-normal whitespace-nowrap textbase">
                                             About Us
                                         </li>
