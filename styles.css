@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'Inter', sans-serif;
 }
 
@@ -31,13 +31,13 @@ body{
 }
 
 
-#menu-toggle:checked + label + ul {
+#menu-toggle:checked+label+ul {
     opacity: 1;
     pointer-events: auto;
-  }
+}
 
 
-  .mapouter {
+.mapouter {
     position: relative;
     text-align: right;
     width: 100%;
@@ -53,4 +53,20 @@ body{
 
 .gmap_iframe {
     height: 501px !important;
+}
+
+/* Select2 Styling */
+
+.select2-container--default .select2-selection--single {
+    border: none;
+}
+
+input.select2-search__field {
+    border: 1px solid #294FB2;
+    border-radius: 2px;
+    width: max-content;
+}
+
+.select2-dropdown {
+    border: none;
 }
