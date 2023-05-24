@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-
-
+    <!-- Select2 - library Stylesheet-->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
     <!-- Flowbite - Tailwind CSS component library Stylesheet-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
@@ -171,8 +171,7 @@
                         class=" h-[800px] object-cover absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                         alt="...">
                 </div>
-                
-            
+
             </div>
 
             <div class="absolute top-0 left-0 inset-0 flex items-center justify-center z-20 h-[800px]">
@@ -192,18 +191,21 @@
                         <div class="flex flex-row items-center justify-between w-full sm:w-[280px] lg:w-fit">
                             <div class="flex flex-row items-center">
                                 <div class="rounded-full w-[12px] h-[12px] bg-[#294FB2]"></div>
-                                <input placeholder="Book your services" type="text"
-                                    class="text-[#232323] p-4 focus:ring-0 border-0 text-sm lg:text-base">
+
+                                <select
+                                    class="w-full js-example-placeholder-single js-states form-control text-black text-[#232323] p-4 focus:ring-0 border-0 text-sm lg:text-base">
+
+                                    <!-- Search result suggestions here  -->
+                                    <!-- First one serves as placeholder -->
+                                    <option class="w-full" value="">Order or Book Lpgas, Solar, Wood, etc</option>
+                                    <option value="LP">Lpgas</option>
+                                    <option value="SL">Solar</option>
+                                    <option value="WD">Wood</option>
+                                    <option value="KS">Kerosene</option>
+                                    <option value="DS">Diesel</option>
+                                </select>
                             </div>
 
-
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#767575"
-                                    class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                                </svg>
-                            </div>
                         </div>
 
                         <div class="hidden lg:block w-[1px] h-4 bg-[#CACACA]"></div>
@@ -727,11 +729,21 @@
         <!-- Footer Ends Here -->
     </main>
 
-
+    <!-- Select2 - library Script-->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Flowbite - Tailwind CSS component library Script-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".js-example-placeholder-single").select2({
+                placeholder: "Order or Book  Lpgas, Solar, Wood, etc",
+                allowClear: true
+            });
+        });
+    </script>
 </body>
 
 </html>
