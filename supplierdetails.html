@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Select2 - library Stylesheet-->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Flowbite - Tailwind CSS component library Stylesheet-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+
+    <!-- Include the following script tag at the end of your HTML file -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2"></script>
+
+    <!-- Tailwind Play CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="/styles.css">
+    <title>Vindii | Supplier <Details></Details>
+    </title>
+
+
+</head>
+
+<body>
+    <main>
+
+        <!-- Header Starts Here -->
+        <header class="bg-[#EAEDF7] w-full h-[72px] sm:h-[92px] md:h-[105px] fixed left-0 right-0 z-50">
+            <section class="max-w-screen-2xl m-auto px-6 sm:px-12 md:px-24  w-full h-[89px] md:h-[105px] ">
+                <div class="py-4 sm:py-6 md:py-8 top-0">
+                    <div class="hidden lg:flex flex-row justify-between items-center">
+
+                        <div class="">
+                            <div class="flex flex-row items-center gap-2">
+                                <a href="/">
+                                    <img src="assets/logo.png" alt="Viidii Logo" />
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row gap-20 justify-center items-center">
+                            <div>
+                                <ul class="flex flex-row text-lg gap-12 font-normal text-[#CCCFE6]">
+                                    <a href="#aboutus">
+                                        <li class="text-[#2E2E2E] font-normal whitespace-nowrap">
+                                            About Us
+                                        </li>
+                                    </a>
+                                    <a href="#works">
+
+                                        <li class="text-[#2E2E2E] font-normal whitespace-nowrap">
+                                            How it Works
+                                        </li>
+                                    </a>
+                                    <a href="#contact">
+                                        <li class="text-[#2E2E2E] font-normal whitespace-nowrap">
+                                            Contact us
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+
+                            <div class="flex flex-row gap-6">
+                                <a href="/signupclient.html"><button
+                                        class="bg-[#F4BCD5] px-6 py-3  sm:px-6 sm:py-2 text-[#DB2777] text-base font-normal border border-[#CCCFE6] rounded-lg">
+                                        Business
+                                    </button></a>
+
+                                <a href="/signup.html"><button
+                                        class="bg-[#BDC8E7] px-6 py-3  sm:px-6 sm:py-2 text-[#294FB2]  text-base font-normal border border-[#CCCFE6] rounded-lg">
+                                        Customer
+                                    </button></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tablet Mode -->
+                    <nav class="bg-[#EAEDF7]  lg:hidden block ">
+                        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
+                            <a href="/" class="flex items-center">
+                                <img src="assets/logo.png" alt="Viidii Logo" class="w-16 block lg:hidden" />
+                            </a>
+                            <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" type="button"
+                                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200  ">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+
+
+
+
+                            <div class="hidden w-full" id="defaultModal" tabindex="-1" aria-hidden="true">
+                                <ul
+                                    class=" z-10 bg-[#EAEDF7] absolute left-0 top-[70px] sm:top-[90px] md:top-[105px] flex flex-col justify-center items-center  w-full mr-12 gap-8 py-8  text-base font-normal ">
+
+                                    <a data-modal-hide="defaultModal" href="#aboutus">
+                                        <li class="text-[#2E2E2E] font-normal whitespace-nowrap textbase">
+                                            About Us
+                                        </li>
+                                    </a>
+
+                                    <a data-modal-hide="defaultModal" href="#works">
+                                        <li class="text-[#2E2E2E] font-normal whitespace-nowrap text-base ">
+                                            How it Works
+                                        </li>
+                                    </a>
+
+                                    <a data-modal-hide="defaultModal" href="#contact">
+                                        <li class="text-[#2E2E2E] font-normal whitespace-nowrap text-base ">
+                                            Contact us
+                                        </li>
+                                    </a>
+
+
+                                    <li>
+                                        <a href="/signupclient.html"><button
+                                                class="bg-[#F4BCD5] px-4 py-2 text-[#DB2777] text-base  font-normal border border-[#CCCFE6] rounded-lg">
+                                                Business
+                                            </button></a>
+
+                                    </li>
+
+                                    <li>
+                                        <a href="/signup.html"><button
+                                                class="bg-[#BDC8E7] px-4 py-2 bg-[#294FB2] text-base  font-normal border border-[#CCCFE6] rounded-lg">
+                                                Customer
+                                            </button></a>
+
+                                    </li>
+                                </ul>
+                                <span class="sr-only">Close modal</span>
+                            </div>
+                        </div>
+                    </nav>
+
+            </section>
+        </header>
+        <!-- Header Ends Here -->
+
+
+        <div class="">
+            <img class="w-full pt-[72px] sm:pt-[92px] md:pt-[105px] " src="/assets/supplier_details.png"
+                alt="Supplier Details Picture">
+        </div>
+
+        <!-- Supplier Details and Rating Section  Starts Here-->
+
+        <section class="relative max-w-screen-2xl m-auto px-6 sm:px-12 md:px-24 my-14">
+            <img class="absolute -top-28" src="/assets/supplier/supllier_image.png" alt="Supplier Image">
+            <div class="flex flex-col md:flex-row gap-2 justify-between items-start">
+
+                <div class="flex flex-col">
+                    <div>
+                        <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold mt-2 mb-4">Daniel Frank Panels</h2>
+                        <h6 class="text-base md:text-lg font-semibold mb-2">Professional in solar installations and sales </h6>
+                        <p class="text-base text-[#232323]">CWP7+GR, 200132, Ibadan, Nigeria</p>
+                    </div>
+                 
+                </div>
+                <!-- Rating Section -->
+                <div class="flex flex-row items-center gap-1">
+                    <div class="flex flex-row ">
+                        <img src="/assets/supplier/filledrating.png" alt="Filled Rating">
+                        <img src="/assets/supplier/filledrating.png" alt="Filled Rating">
+                        <img src="/assets/supplier/filledrating.png" alt="Filled Rating">
+                        <img src="/assets/supplier/emptyrating.png" alt="Empty Rating">
+                        <img src="/assets/supplier/emptyrating.png" alt="Empty Rating">
+                    </div>
+                    <p class="text-base">3141+ Ratings</p>
+                </div>
+            </div>
+
+            <div class="flex flex-row gap-2 items-center mt-10">
+                <div class="w-fit py-2 px-5 bg-[#EAEDF7] rounded-full text-xs text-[#294FB2]">Available</div>
+                <p class="font-bold">Fridays • 9:00 AM - 9:00 PM</p>
+            </div>
+
+            <details>
+                <summary class="flex flex-row items-center gap-2 mt-9 cursor-pointer">
+                    <img src="/assets/supplier/calendar.svg" alt="Calendar Icon">
+                    <p class="text-[#232323] font-bold">Open hours menu</p>
+                    <img src="/assets/supplier/dropdown.svg" alt="Dropdown Icon">
+                </summary>
+
+                <div class="mt-4 flex flex-col gap-5 w-[360px]">
+                    <div class="text-sm flex flex-row gap-16 items-center justify-between">
+                        <p>Sunday</p>
+                        <p>• 9:00 AM - 9:00 PM</p>
+                    </div>
+                    <div class="text-sm flex flex-row gap-16 items-center justify-between">
+                        <p>Monday</p>
+                        <p>• 9:00 AM - 9:00 PM</p>
+                    </div>
+                    <div class="text-sm flex flex-row gap-16 items-center justify-between">
+                        <p>Tuesday</p>
+                        <p>• 9:00 AM - 9:00 PM</p>
+                    </div>
+                    <div class="text-sm flex flex-row gap-16 items-center justify-between">
+                        <p>Wednesday</p>
+                        <p>• 9:00 AM - 9:00 PM</p>
+                    </div>
+                    <div class="text-sm flex flex-row gap-16 items-center justify-between">
+                        <p>Thusday</p>
+                        <p>• 9:00 AM - 9:00 PM</p>
+                    </div>
+                    <div class="text-sm flex flex-row gap-16 items-center justify-between">
+                        <p>Friday</p>
+                        <p>• 9:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+            </details>
+        </section>
+
+        <!-- Supplier Details and Rating Section  Ends HEre-->
+
+
+        <!-- Solar Panel & LPS Gas Starts here  -->
+        <section class="relative max-w-screen-2xl m-auto px-6 sm:px-12 md:px-24 my-14">
+
+            <!-- Nav Bar -->
+            <div class="flex items-center mt-30 border-b-2 w-full">
+                <a href="#"
+                    class="mr-6 pb-2 border-b border-gray-300 hover:border-black transition duration-300 ease-in-out">Solar
+                    panels</a>
+                <a href="#"
+                    class="pb-2 border-b border-gray-300 hover:border-black transition duration-300 ease-in-out">Lps
+                    repair</a>
+            </div>
+
+<!-- Solar Panel Data -->
+            <div>
+                <h2 class="font-bold text-xl sm:text-2xl lg:text-3xl mt-8 mb-3">Solar Panel</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
+                    <div class=" rounded-xl">
+
+                        <div class="relative w-full  ">
+                            <img class="w-full  object-cover rounded-t-xl" src="/assets/supplier/bluetti.png"
+                                alt="Search Picture">
+
+                            <div class="absolute top-5 left-4">
+                                <p class="text-[#2E2E2E] bg-white p-1 text-[12px] rounded">Energy solution</p>
+                            </div>
+
+                            <div
+                                class="absolute top-5 right-4 rounded bg-white text-[#2E2E2E] px-1 py-[2px] flex flex-row gap-1 items-center">
+                                <img src="/assets/search/star.png" alt="Search Star">
+                                <p class="text-[13px]">4.3</p>
+                            </div>
+                        </div>
+
+                        <div class="flex  flex-col py-4 pl-2 pr-4 bg-[#EAEDF7] rounded-b-xl">
+                            <div class="flex flex-row items-center gap-2">
+
+                                <p class="font-semibold text-base">BLUETTI EB55 Portable Power Station</p>
+                            </div>
+
+                            <div class="">
+
+                                <div class=" flex flex-row justify-between items-center mt-4">
+                                    <p class="text-[#DB2777] text-lg font-semibold">R1000</p>
+                                    <button
+                                        class="bg-[#DB2777] p-[10px] text-sm rounded-lg text-white font-semibold">Order
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" rounded-xl">
+
+                        <div class="relative w-full  ">
+                            <img class="w-full  object-cover rounded-t-xl" src="/assets/supplier/bluetti.png"
+                                alt="Search Picture">
+
+                            <div class="absolute top-5 left-4">
+                                <p class="text-[#2E2E2E] bg-white p-1 text-[12px] rounded">Energy solution</p>
+                            </div>
+
+                            <div
+                                class="absolute top-5 right-4 rounded bg-white text-[#2E2E2E] px-1 py-[2px] flex flex-row gap-1 items-center">
+                                <img src="/assets/search/star.png" alt="Search Star">
+                                <p class="text-[13px]">4.3</p>
+                            </div>
+                        </div>
+
+                        <div class="flex  flex-col py-4 pl-2 pr-4 bg-[#EAEDF7] rounded-b-xl">
+                            <div class="flex flex-row items-center gap-2">
+
+                                <p class="font-semibold text-base">BLUETTI EB55 Portable Power Station</p>
+                            </div>
+
+                            <div class="">
+
+                                <div class=" flex flex-row justify-between items-center mt-4">
+                                    <p class="text-[#DB2777] text-lg font-semibold">R1000</p>
+                                    <button
+                                        class="bg-[#DB2777] p-[10px] text-sm rounded-lg text-white font-semibold">Order
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" rounded-xl">
+
+                        <div class="relative w-full  ">
+                            <img class="w-full  object-cover rounded-t-xl" src="/assets/supplier/bluetti.png"
+                                alt="Search Picture">
+
+                            <div class="absolute top-5 left-4">
+                                <p class="text-[#2E2E2E] bg-white p-1 text-[12px] rounded">Energy solution</p>
+                            </div>
+
+                            <div
+                                class="absolute top-5 right-4 rounded bg-white text-[#2E2E2E] px-1 py-[2px] flex flex-row gap-1 items-center">
+                                <img src="/assets/search/star.png" alt="Search Star">
+                                <p class="text-[13px]">4.3</p>
+                            </div>
+                        </div>
+
+                        <div class="flex  flex-col py-4 pl-2 pr-4 bg-[#EAEDF7] rounded-b-xl">
+                            <div class="flex flex-row items-center gap-2">
+
+                                <p class="font-semibold text-base">BLUETTI EP500Pro Solar Power Station</p>
+                            </div>
+
+                            <div class="">
+
+                                <div class=" flex flex-row justify-between items-center mt-4">
+                                    <p class="text-[#DB2777] text-lg font-semibold">R1000</p>
+                                    <button
+                                        class="bg-[#DB2777] p-[10px] text-sm rounded-lg text-white font-semibold">Order
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- LPS Repair Data -->
+
+            <div>
+                <h2 class="font-bold text-xl sm:text-2xl lg:text-3xl mt-8 mb-3">LPS Repair</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
+                    <div class=" rounded-xl">
+
+                        <div class="relative w-full  ">
+                            <img class="w-full  object-cover rounded-t-xl" src="/assets/supplier/gas1.png"
+                                alt="Search Picture">
+
+                            <div class="absolute top-5 left-4">
+                                <p class="text-[#2E2E2E] bg-white p-1 text-[12px] rounded">Energy solution</p>
+                            </div>
+
+                            <div
+                                class="absolute top-5 right-4 rounded bg-white text-[#2E2E2E] px-1 py-[2px] flex flex-row gap-1 items-center">
+                                <img src="/assets/search/star.png" alt="Search Star">
+                                <p class="text-[13px]">4.3</p>
+                            </div>
+                        </div>
+
+                        <div class="flex  flex-col py-4 pl-2 pr-4 bg-[#EAEDF7] rounded-b-xl">
+                            <div class="flex flex-row items-center gap-2">
+
+                                <p class="font-semibold text-base"> Gas Cylinder With Hose & Regulator</p>
+                            </div>
+
+                            <div class="">
+
+                                <div class=" flex flex-row justify-between items-center mt-4">
+                                    <p class="text-[#DB2777] text-lg font-semibold">R1000</p>
+                                    <button
+                                        class="bg-[#DB2777] p-[10px] text-sm rounded-lg text-white font-semibold">Order
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" rounded-xl">
+
+                        <div class="relative w-full  ">
+                            <img class="w-full  object-cover rounded-t-xl" src="/assets/supplier/gas2.png"
+                                alt="Search Picture">
+
+                            <div class="absolute top-5 left-4">
+                                <p class="text-[#2E2E2E] bg-white p-1 text-[12px] rounded">Energy solution</p>
+                            </div>
+
+                            <div
+                                class="absolute top-5 right-4 rounded bg-white text-[#2E2E2E] px-1 py-[2px] flex flex-row gap-1 items-center">
+                                <img src="/assets/search/star.png" alt="Search Star">
+                                <p class="text-[13px]">4.3</p>
+                            </div>
+                        </div>
+
+                        <div class="flex  flex-col py-4 pl-2 pr-4 bg-[#EAEDF7] rounded-b-xl">
+                            <div class="flex flex-row items-center gap-2">
+
+                                <p class="font-semibold text-base">12.5kg Gas Cylinder</p>
+                            </div>
+
+                            <div class="">
+
+                                <div class=" flex flex-row justify-between items-center mt-4">
+                                    <p class="text-[#DB2777] text-lg font-semibold">R1000</p>
+                                    <button
+                                        class="bg-[#DB2777] p-[10px] text-sm rounded-lg text-white font-semibold">Order
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" rounded-xl">
+
+                        <div class="relative w-full  ">
+                            <img class="w-full  object-cover rounded-t-xl" src="/assets/supplier/gas3.png"
+                                alt="Search Picture">
+
+                            <div class="absolute top-5 left-4">
+                                <p class="text-[#2E2E2E] bg-white p-1 text-[12px] rounded">Energy solution</p>
+                            </div>
+
+                            <div
+                                class="absolute top-5 right-4 rounded bg-white text-[#2E2E2E] px-1 py-[2px] flex flex-row gap-1 items-center">
+                                <img src="/assets/search/star.png" alt="Search Star">
+                                <p class="text-[13px]">4.3</p>
+                            </div>
+                        </div>
+
+                        <div class="flex  flex-col py-4 pl-2 pr-4 bg-[#EAEDF7] rounded-b-xl">
+                            <div class="flex flex-row items-center gap-2">
+
+                                <p class="font-semibold text-base">B12.5kg Gas Cylinder</p>
+                            </div>
+
+                            <div class="">
+
+                                <div class=" flex flex-row justify-between items-center mt-4">
+                                    <p class="text-[#DB2777] text-lg font-semibold">R1000</p>
+                                    <button
+                                        class="bg-[#DB2777] p-[10px] text-sm rounded-lg text-white font-semibold">Order
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+        <!-- Solar Panel & LPS Gas Ends here  -->
+
+
+        <!-- Footer Starts Here -->
+
+        <footer class="relative">
+
+            <img src="/assets/footerimage.png" class="absolute inset-0 object-cover w-full h-full"
+                alt="Background Image">
+            <div class="relative">
+                <div class="bg-[#11214B] bg-opacity-90 absolute inset-0"></div>
+
+                <section class="max-w-screen-2xl m-auto px-6 sm:px-12 md:px-24 ">
+                    <div class="flex items-center justify-center h-full">
+                        <div
+                            class="text-white text-center relative z-10 py-16 flex flex-col items-center justify-center gap-16 md:gap-24">
+                            <div class="w-full md:w-8/12 m-auto">
+                                <p class="text-lg font-semibold">Let's keep in touch!
+                                </p>
+                                <p class="text-lg font-semibold">
+                                    You can also reach out to us on any of the following social media platforms, we
+                                    respond
+                                    in 1
+                                    or 2 business days</p>
+                            </div>
+
+
+                            <div>
+                                <ul class="flex flex-row gap-6 items-center">
+                                    <a href="">
+                                        <li class="p-3 rounded-lg bg-white "><img src="/assets/socialicons/whatsapp.svg"
+                                                alt="Whatsapp Icon" class="w-6"></li>
+                                    </a>
+                                    <a href="">
+                                        <li class="p-3 rounded-lg bg-white "><img src="/assets/socialicons/twitter.svg"
+                                                alt="Twitter Icon" class="w-6"></li>
+                                    </a>
+                                    <a href="">
+                                        <li class="p-3 rounded-lg bg-white "><img
+                                                src="/assets/socialicons/instagram.svg" alt="Instagram Icon"
+                                                class="w-6"></li>
+                                    </a>
+                                    <a href="">
+                                        <li class="p-3 rounded-lg bg-white "><img src="/assets/socialicons/phone.svg"
+                                                alt="Phone Icon" class="w-6"></li>
+                                    </a>
+                                </ul>
+                            </div>
+
+                            <div class="">
+                                <ul
+                                    class="list-disc text-sm flex flex-row flex-wrap items-center justify-center gap-x-8 gap-y-2 px-3">
+                                    <a href="#aboutus">
+                                        <li>About Us</li>
+                                    </a>
+                                    <a href="#works">
+                                        <li>How It Works</li>
+                                    </a>
+                                    <a href="contact">
+                                        <li>Contact Us</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Refunds and Cancellations</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Terms and Conditions</li>
+                                    </a>
+
+                                </ul>
+                            </div>
+
+                            <div class="w-full md:8/12 lg:w-6/12">
+                                <p class="italic text-sm ">Office Address: Crownwood Office Park, Block D-2nd Floor, 100
+                                    Northern Parkway, Ormonde,
+                                    JHB,
+                                    2019 Contact number: +27784359201
+                                    Copyright © 2023 Vindii</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </footer>
+
+        <!-- Footer Ends Here -->
+    </main>
+
+    <!-- Select2 - library Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Flowbite - Tailwind CSS component library Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".js-example-placeholder-single").select2({
+                placeholder: "Order or Book  Lpgas, Solar, Wood, etc",
+                allowClear: true
+            });
+        });
+    </script>
+</body>
+
+</html>
