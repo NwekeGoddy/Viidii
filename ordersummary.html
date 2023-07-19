@@ -25,40 +25,52 @@
 <body>
 
     <div class="fixed inset-0 flex flex-col items-center justify-center bg-gray-600 bg-opacity-50">
-        <h2 class="text-2xl font-bold mb-8 md:mb-12 mb-5">Order Summary Modal</h2>
-        <div class="w-[450px] bg-white text-base md:text-lg shadow-lg p-8 rounded-lg flex flex-col items-start gap-6">
-            <div class="w-full flex flex-row  items-center justify-start">
+
+        <h2 class="text-base md:text-xl lg:text-2xl font-bold mb-8 md:mb-12 mb-5">Order Summary Modal</h2>
+        <div class="bg-white text-base md:text-lg shadow-lg p-12 rounded-3xl flex flex-col items-start gap-6">
+            <div class="w-full flex flex-row gap-16 items-center justify-between w-full">
                 <p class="w-1/2">Full Name</p>
                 <p class="font-bold">Mary Ehapa</p>
             </div>
-            <div class=" flex flex-row  items-center justify-start">
+            <div class="w-full flex flex-row gap-16 items-center justify-between w-full">
                 <p class="w-1/2">Email</p>
                 <p class="font-bold"> ehapamary50@gmail.com</p>
             </div>
-            <div class=" flex flex-row gap-16 items-center justify-start">
+            <div class=" flex flex-row gap-16 items-center justify-between w-full">
                 <p>Phone Number</p>
                 <p class="font-bold"> +2347035585261</p>
             </div>
-            <div class=" flex flex-row gap-16 items-center justify-start">
+            <div class=" flex flex-row gap-16 items-center justify-between w-full">
                 <p>Price</p>
                 <p class="font-bold">R15,000.00</p>
             </div>
-            <div class=" flex flex-row gap-16 items-center justify-start">
+            <div class=" flex flex-row gap-16 items-center justify-between w-full">
                 <p class="w-50">Delivery Type</p>
                 <p class="font-bold">Home Delivery</p>
             </div>
-            <div class=" flex flex-row gap-16 items-center justify-start">
+            <div class=" flex flex-row gap-16 items-center justify-between w-full">
                 <p>Payment Type</p>
                 <p class="font-bold">Payment on Delivery</p>
             </div>
 
-            <div class="flex flex-row gap-16 items-center justify-start">
+            <div class="flex flex-row gap-16 items-center justify-between w-full">
                 <p>Status</p>
-                <p class="font-bold">Pending
+                <div class="relative inline-block">
+                    <select class="text-base px-4 py-2 border-transparent rounded-md text-[#FBC60A] bg-[#FFF9E7] font-bold cursor-pointer appearance-none">
+                      <option selected disabled hidden>Pending</option>
+                      <option class="text-base">Processing</option>
+                      <option class="text-base">Done</option>
+                    </select>
+                   
+                  </div>
+                  
+            </div>
 
-            
+            <div class="flex w-full justify-end items-end">
+                <div class="w-2/3"></div>
+                <p className="text-[12px]">The button should be clicked when order is received</p>
+            </div>
         </div>
-    </div>
 </body>
 
 </html>
